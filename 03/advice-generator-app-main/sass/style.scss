@@ -1,0 +1,133 @@
+@use "mainConfiguration";
+@use "variables";
+
+section {
+  margin: 0 auto;
+  width: 40%;
+
+  .card-section {
+    margin-top: 180px;
+    background-color: variables.$Dark_Grayish_Blue;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+
+    h3.card-section__title {
+      margin-top: 14px;
+      color: variables.$Neon_Green;
+      letter-spacing: 3px;
+      font-size: 14px;
+    }
+
+    p.card-section__description {
+      margin-top: 20px;
+      font-size: variables.$Font_size;
+      color: variables.$Light_Cyan;
+    }
+
+    img.card-section__separator {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      width: 90%;
+    }
+  }
+
+  .button-section {
+    text-align: center;
+
+    button.button-section__button {
+      margin-top: -70px;
+      background-color: variables.$Neon_Green;
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50px;
+
+      img {
+        display: block;
+        width: 40%;
+      }
+    }
+
+    button.button-section__button:hover {
+      box-shadow: 0 0 30px variables.$Neon_Green;
+    }
+  }
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (max-width: 1290px) {
+  section {
+    width: 60%;
+
+    .button-section {
+      button.button-section__button {
+        width: 60px;
+        height: 60px;
+
+        img {
+          display: block;
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    width: 90%;
+
+    .button-section {
+      text-align: center;
+
+      button.button-section__button {
+        width: 60px;
+        height: 60px;
+
+        img {
+          display: block;
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  section {
+
+    .card-section {
+
+      img.card-section__separator {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 95%;
+        height: 20px;
+      }
+    }
+
+    .button-section {
+      text-align: center;
+
+      button.button-section__button {
+        width: 60px;
+        height: 60px;
+
+        img {
+          display: block;
+          width: 40%;
+        }
+      }
+    }
+  }
+}
