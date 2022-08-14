@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  margin: 0 auto;
+  width: 55%;
+}
+section .component-section {
+  margin-top: 110px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+section .component-section .component-section__one,
+section .component-section .component-section__second,
+section .component-section .component-section__third {
+  padding: 40px 45px;
+}
+section .component-section .component-section__one img,
+section .component-section .component-section__second img,
+section .component-section .component-section__third img {
+  margin-bottom: 25px;
+}
+section .component-section .component-section__one h2,
+section .component-section .component-section__second h2,
+section .component-section .component-section__third h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 35px;
+  color: hsl(0deg, 0%, 95%);
+}
+section .component-section .component-section__one p,
+section .component-section .component-section__second p,
+section .component-section .component-section__third p {
+  margin-top: 20px;
+  line-height: 25px;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 13px;
+  width: 100%;
+}
+section .component-section .component-section__one button,
+section .component-section .component-section__second button,
+section .component-section .component-section__third button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  margin-top: 80px;
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(0deg, 0%, 95%);
+  font-weight: 700;
+  transition: all 0.5s;
+}
+section .component-section .component-section__one button:hover,
+section .component-section .component-section__second button:hover,
+section .component-section .component-section__third button:hover {
+  border: 1px solid hsl(0deg, 0%, 95%);
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+  font-weight: 400;
+}
+section .component-section .component-section__one {
+  background-color: hsl(31deg, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+section .component-section .component-section__one button {
+  color: hsl(31deg, 77%, 52%);
+}
+section .component-section .component-section__second {
+  background-color: hsl(184deg, 100%, 22%);
+}
+section .component-section .component-section__second button {
+  color: hsl(184deg, 100%, 22%);
+}
+section .component-section .component-section__third {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179deg, 100%, 13%);
+}
+section .component-section .component-section__third button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+footer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 1000px) {
+  section {
+    width: 80%;
+  }
+}
+@media (max-width: 1000px) {
+  section {
+    width: 95%;
+  }
+}
+@media (max-width: 640px) {
+  section {
+    width: 70%;
+  }
+  section .component-section {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+  }
+  section .component-section .component-section__one button,
+section .component-section .component-section__second button,
+section .component-section .component-section__third button {
+    margin-top: 30px;
+  }
+  section .component-section .component-section__one {
+    background-color: hsl(31deg, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  section .component-section .component-section__third {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: hsl(179deg, 100%, 13%);
+  }
+}
+@media (max-width: 400px) {
+  section {
+    width: 90%;
+  }
+  section .component-section {
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
