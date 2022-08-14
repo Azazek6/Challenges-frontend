@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+button {
+  cursor: pointer;
+}
+
+.margin {
+  margin-top: 130px;
+}
+
+section {
+  margin: 0 auto;
+  width: 43%;
+}
+section .card-section {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+  display: flex;
+}
+section .card-section .first-section {
+  width: 55%;
+}
+section .card-section .first-section .first-section__image {
+  background-image: url("../images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+section .card-section .second-section {
+  padding: 15px;
+  width: 40%;
+}
+section .card-section .second-section p.second-section__product {
+  color: hsl(228deg, 12%, 48%);
+  line-height: 30px;
+  letter-spacing: 8px;
+  font-size: 11px;
+}
+section .card-section .second-section h2.second-section__product-name {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+section .card-section .second-section p.second-section__product-description {
+  color: hsl(228deg, 12%, 48%);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+section .card-section .second-section .price-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+section .card-section .second-section .price-section h3.price-section__product-price {
+  font-size: 30px;
+  font-family: "Fraunces", serif;
+  color: hsl(158deg, 36%, 37%);
+  width: 54%;
+}
+section .card-section .second-section .price-section h4.price-section__product-price-discount {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+section .card-section .second-section button.second-section__button-add {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  background-image: url("../images/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 25%;
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+}
+section .card-section .second-section button.second-section__button-add:hover {
+  background-color: hsl(159deg, 34%, 28%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 1250px) {
+  section {
+    width: 60%;
+  }
+}
+@media (max-width: 1220px) {
+  section {
+    width: 75%;
+  }
+  .price-section h3.price-section__product-price {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  section {
+    width: 90%;
+  }
+}
+@media (max-width: 660px) {
+  .margin {
+    margin-top: 30px;
+  }
+  section .card-section {
+    flex-direction: column;
+  }
+  section .card-section .first-section {
+    width: 100%;
+  }
+  section .card-section .first-section .first-section__image {
+    background-image: url("../images/image-product-mobile.jpg");
+    height: 400px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  section .card-section .second-section {
+    padding: 15px;
+    width: 100%;
+  }
+  section .card-section .second-section h2.second-section__product-name {
+    font-size: 20px;
+  }
+  section .card-section .second-section p.second-section__product-description {
+    font-size: 12px;
+  }
+  section .card-section .second-section .price-section h3.price-section__product-price {
+    font-size: 25px;
+    width: 30%;
+  }
+  section .card-section .second-section .price-section h4.price-section__product-price-discount {
+    font-size: 12px;
+  }
+}
+@media (max-width: 377px) {
+  section .card-section .first-section {
+    width: 100%;
+  }
+  section .card-section .first-section .first-section__image {
+    height: 250px;
+  }
+  section .card-section .second-section .price-section h3.price-section__product-price {
+    width: 45%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
