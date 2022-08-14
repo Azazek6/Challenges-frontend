@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(257deg, 40%, 49%);
+  margin: 0 auto;
+  width: 90%;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  margin-top: 20px;
+  width: 100%;
+}
+header a.logo-header img {
+  width: 180px;
+}
+
+section {
+  width: 100%;
+}
+section .card-section {
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+section .card-section .card_section__one img.one__img {
+  width: 100%;
+}
+section .card-section .card_section__second {
+  padding: 55px 30px;
+}
+section .card-section .card_section__second h2.one__title {
+  color: #fff;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+section .card-section .card_section__second p.one__description {
+  width: 75%;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 22px;
+}
+section .card-section .card_section__second button.one__button {
+  margin-top: 20px;
+  width: 155px;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  color: hsl(257deg, 40%, 49%);
+  font-weight: 400;
+  font-size: 14px;
+}
+section .card-section .card_section__second button.one__button:hover {
+  color: #fff;
+  background-color: hsl(300deg, 69%, 71%);
+}
+section .social-section {
+  margin: 0 auto;
+  width: 80%;
+  text-align: right;
+}
+section .social-section a.icon-social {
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 100px;
+  text-align: center;
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+section .social-section a.icon-social i {
+  font-size: 13px;
+}
+section .social-section a.icon-social:hover {
+  border: 1px solid hsl(300deg, 69%, 71%);
+  color: hsl(300deg, 69%, 71%);
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(4deg, 89%, 47%);
+}
+
+@media (max-width: 1000px) {
+  section .card-section .card_section__second h2.one__title {
+    width: 80%;
+    font-size: 35px;
+  }
+  section .card-section .card_section__second p.one__description {
+    width: 80%;
+    font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  section .card-section {
+    grid-template-columns: 1fr;
+  }
+  section .card-section .card_section__second {
+    text-align: center;
+  }
+  section .card-section .card_section__second h2.one__title {
+    width: 100%;
+  }
+  section .card-section .card_section__second p.one__description {
+    width: 100%;
+    font-size: 15px;
+  }
+  section .card-section .card_section__second button.one__button {
+    width: 200px;
+    height: 45px;
+  }
+  section .social-section {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+  }
+  section .card-section .card_section__second h2.one__title {
+    font-size: 30px;
+  }
+  section .card-section .card_section__second p.one__description {
+    width: 100%;
+    font-size: 13px;
+  }
+  section .social-section {
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  section .card-section .card_section__second h2.one__title {
+    font-size: 20px;
+  }
+  section .card-section .card_section__second p.one__description {
+    width: 100%;
+    font-size: 14px;
+  }
+  section .social-section {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

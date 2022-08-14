@@ -1,0 +1,25 @@
+@use "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: variables.$Family_Open;
+}
+
+body {
+  background-image: url('../images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-color: variables.$Violet;
+  margin: 0 auto;
+  width: 90%;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
